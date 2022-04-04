@@ -15,7 +15,7 @@ class Solution
     bool isSparse(int n)
     {
        int num = n;
-       num = (n<<1);
+       num = (n>>1);
        if(num & n)
        return false;
        else

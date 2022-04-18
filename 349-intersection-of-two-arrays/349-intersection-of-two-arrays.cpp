@@ -12,16 +12,17 @@ public:
         for(int i=0;i<nums2.size();i++)
         {
             if(s1.find(nums2[i])!=s1.end())
-            { s2.insert(nums2[i]);
+            { res.push_back(nums2[i]);
+             s1.erase(nums2[i]);
             }
           
             // res.push_back(nums2[i]);
         }
-        for_each(  s2.begin(),
-                s2.end(),
-                [&](const auto & elem){
-                    res.push_back(elem);
-                });
+        // for_each(  s2.begin(),
+        //         s2.end(),
+        //         [&](const auto & elem){
+        //             res.push_back(elem);
+        //         });
         return res;
         
     }

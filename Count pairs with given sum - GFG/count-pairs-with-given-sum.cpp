@@ -17,7 +17,6 @@ public:
            int b=k-a[i];
            if(m[b])
            ans+=m[b];
-           
            m[a[i]]++;
            
        }

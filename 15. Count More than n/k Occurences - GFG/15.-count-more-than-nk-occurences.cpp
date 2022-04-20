@@ -12,19 +12,40 @@ class Solution
 {
     public:
     //Function to find all elements in array that appear more than n/k times.
-    int countOccurence(int arr[], int n, int k) {
-        unordered_map<int,int>mp;
-        for(int i=0;i<n;i++)
-        {
-            mp[arr[i]]++;
-        }
-        int c=0;
-        for(auto x:mp)
-        {
-            if(x.second>n/k)
-            c++;
-        }
-        return c;
+    int countOccurence(int a[], int n, int k) {
+        // unordered_map<int,int>mp;
+        // for(int i=0;i<n;i++)
+        // {
+        //     mp[arr[i]]++;
+        // }
+        // int c=0;
+        // for(auto x:mp)
+        // {
+        //     if(x.second>n/k)
+        //     c++;
+        // }
+        // return c;
+      
+       
+    sort(a,a+n); 
+  
+   int count=1,ans=0,t=0;
+   
+   for(int i=1;i<n;i++){
+       if(a[i]==a[i-1]&&a[i]!=t){
+           count++;
+       }else{
+           count=1;
+       }
+       if(count>n/k){
+           ans++;
+           t=a[i];
+       }
+   }
+  
+      return ans; 
+   
+    
         // Your code here
     }
 };

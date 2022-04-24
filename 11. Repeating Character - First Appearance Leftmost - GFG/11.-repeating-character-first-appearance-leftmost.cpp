@@ -15,7 +15,7 @@ class Solution
     //Function to find repeated character whose first appearance is leftmost.
     int repeatedCharacter (string s) 
     { 
-      vector<int>a(256,0);
+      vector<int>a(256);
       for(int i=0;i<s.size();i++)
       {
           a[s[i]]++;

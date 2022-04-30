@@ -49,7 +49,8 @@ class Solution{
         return NULL;
         else if(x<head->data)
         {temp->next=head;
-         return temp;
+         head=temp;
+         return head;
             
         }
         else

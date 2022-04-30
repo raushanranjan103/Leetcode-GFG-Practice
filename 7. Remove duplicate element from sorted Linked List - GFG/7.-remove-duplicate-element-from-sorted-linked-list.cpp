@@ -71,9 +71,7 @@ int flag=0;
 
  while(curr->next != NULL){
         if(curr->data == curr->next->data){
-            Node *temp = curr->next;
             curr->next = curr->next->next;
-            delete temp;
         }
         else{
             curr = curr->next;

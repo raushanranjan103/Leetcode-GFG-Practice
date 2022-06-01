@@ -18,13 +18,14 @@ class Solution
             while(s.empty()==false && arr[s.top()] >= curr){
                 s.pop();
             }
-            if(s.empty()==true)
+           if(s.empty()==true)
             {
-                s.push(-1);
+                ans[i]=-1;
             }
             
-            ans[i] = s.top();
-            s.push(i);
+           else
+           ans[i] = s.top();
+           s.push(i);
         }
         return ans;
     }
@@ -43,10 +44,11 @@ class Solution
             }
               if(s.empty()==true)
             {
-                s.push(-1);
+                ans[i]=-1;
             }
             
-            ans[i] = s.top();
+           else
+           ans[i] = s.top();
             s.push(i);
         }
         return ans;

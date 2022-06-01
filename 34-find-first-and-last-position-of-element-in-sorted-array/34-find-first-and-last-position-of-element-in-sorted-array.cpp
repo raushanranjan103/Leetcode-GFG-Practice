@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> searchRange(vector<int>& v, int target) {
-        //std::vector<int>::iterator upper1,low1;
+        
         auto low1 = std::lower_bound(v.begin(), v.end(),target);
         vector<int>ans;
         if(binary_search(v.begin(), v.end(), target))

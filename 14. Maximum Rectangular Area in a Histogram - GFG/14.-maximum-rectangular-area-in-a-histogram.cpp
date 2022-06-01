@@ -20,7 +20,7 @@ class Solution
             }
            if(s.empty()==true)
             {
-                ans[i]=-1;
+                ans[i]=n;
             }
             
            else
@@ -63,13 +63,12 @@ class Solution
         vector<int> prev(n);
         prev = prevSmaller(arr, n);
         
-        long long area = 0;
+        long long area = INT_MIN;
         
         for(int i=0; i<n; i++){
             long long l = arr[i];
             
-            if(next[i]==-1)
-            next[i] = n;
+          
             
             long long b = next[i]-prev[i]-1;
             

@@ -45,10 +45,7 @@ class Solution {
     vector<int> inOrder(Node* root) {
         vector<int>ans;
         postorder(root);
-        
-        ans=res;
-        res.clear();
-        return ans;
+        return res;
         // Your code here
     }
 };

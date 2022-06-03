@@ -24,7 +24,7 @@ public:
         if(root==NULL)
             return 0;
         int c=0;
-     raushan(root);
-        return res.size();
+    // raushan(root);
+        return 1+countNodes(root->left)+countNodes(root->right);
     }
 };

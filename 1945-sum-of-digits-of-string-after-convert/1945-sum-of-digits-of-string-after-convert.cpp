@@ -14,11 +14,10 @@ public:
    ss <<t;
         int x=0;
    
-   // place the converted value to the int variable
+  
    ss >>x;
    
-   //print to the consloe
-
+  
         int ans=0;
         while(k--){
             for(int i=0;i<t.length();i++){

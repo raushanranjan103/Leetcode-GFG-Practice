@@ -1,7 +1,7 @@
 class Solution {
 public:
     int fib(int n) {
-                 if(n==0|n==1)
+                 if(n==0||n==1)
                      return n;
         int fibb[n+1];
           fibb[0]=0,fibb[1]=1;
